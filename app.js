@@ -1,7 +1,7 @@
 async function fetchAndDisplayData() {
     try {
         // Fetch data from the Azure Function
-        const response = await fetch('https://fadmscvapi.azurewebsites.net/api/cv_data');  // Replace with your Function URL
+        const response = await fetch('https://fadmscvapi-pers.azurewebsites.net/api/cv_data');  // Replace with your Function URL
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
