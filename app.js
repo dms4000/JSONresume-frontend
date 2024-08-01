@@ -63,19 +63,6 @@ async function fetchAndDisplayData() {
                     </ul>
                 </div>
                 <div class="profile-section">
-                    <h2>Publications</h2>
-                    <ul>
-                        ${profile.publications.map(pub => `
-                            <li>
-                                <strong>${pub.name}</strong> by ${pub.publisher}
-                                <p>${pub.releaseDate}</p>
-                                <p>${pub.summary}</p>
-                                <p><a href="${pub.url}" target="_blank">${pub.url}</a></p>
-                            </li>
-                        `).join('')}
-                    </ul>
-                </div>
-                <div class="profile-section">
                     <h2>Skills</h2>
                     <ul>
                         ${profile.skills.map(skill => `
