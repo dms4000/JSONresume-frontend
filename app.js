@@ -46,8 +46,6 @@ async function fetchAndDisplayData() {
                             <li>
                                 <strong>${edu.studyType} in ${edu.area}</strong> from <a href="${edu.url}" target="_blank">${edu.institution}</a>
                                 <p>${edu.startDate} - ${edu.endDate}</p>
-                                <p>Score: ${edu.score}</p>
-                                <ul>${edu.courses.map(course => `<li>${course}</li>`).join('')}</ul>
                             </li>
                         `).join('')}
                     </ul>
