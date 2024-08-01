@@ -51,18 +51,6 @@ async function fetchAndDisplayData() {
                     </ul>
                 </div>
                 <div class="profile-section">
-                    <h2>Awards</h2>
-                    <ul>
-                        ${profile.awards.map(award => `
-                            <li>
-                                <strong>${award.title}</strong> by ${award.awarder}
-                                <p>${award.date}</p>
-                                <p>${award.summary}</p>
-                            </li>
-                        `).join('')}
-                    </ul>
-                </div>
-                <div class="profile-section">
                     <h2>Certificates</h2>
                     <ul>
                         ${profile.certificates.map(cert => `
