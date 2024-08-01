@@ -40,19 +40,6 @@ async function fetchAndDisplayData() {
                     </ul>
                 </div>
                 <div class="profile-section">
-                    <h2>Volunteer Experience</h2>
-                    <ul>
-                        ${profile.volunteer.map(vol => `
-                            <li>
-                                <strong>${vol.position}</strong> at <a href="${vol.url}" target="_blank">${vol.organization}</a>
-                                <p>${vol.startDate} - ${vol.endDate}</p>
-                                <p>${vol.summary}</p>
-                                <ul>${vol.highlights.map(highlight => `<li>${highlight}</li>`).join('')}</ul>
-                            </li>
-                        `).join('')}
-                    </ul>
-                </div>
-                <div class="profile-section">
                     <h2>Education</h2>
                     <ul>
                         ${profile.education.map(edu => `
