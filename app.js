@@ -100,9 +100,7 @@ async function fetchAndDisplayData() {
                         ${profile.projects.map(proj => `
                             <li>
                                 <strong>${proj.name}</strong>
-                                <p>${proj.startDate} - ${proj.endDate}</p>
                                 <p>${proj.description}</p>
-                                <ul>${proj.highlights.map(highlight => `<li>${highlight}</li>`).join('')}</ul>
                                 <p><a href="${proj.url}" target="_blank">${proj.url}</a></p>
                             </li>
                         `).join('')}
