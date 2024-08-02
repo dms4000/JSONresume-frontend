@@ -84,17 +84,6 @@ async function fetchAndDisplayData() {
                     </ul>
                 </div>
                 <div class="profile-section">
-                    <h2>Interests</h2>
-                    <ul>
-                        ${profile.interests.map(interest => `
-                            <li>
-                                <strong>${interest.name}</strong>
-                                <ul>${interest.keywords.map(keyword => `<li>${keyword}</li>`).join('')}</ul>
-                            </li>
-                        `).join('')}
-                    </ul>
-                </div>
-                <div class="profile-section">
                     <h2>References</h2>
                     <ul>
                         ${profile.references.map(ref => `
